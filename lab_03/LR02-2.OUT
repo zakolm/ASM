@@ -1,0 +1,54 @@
+>BP M1 "D K L1;R;G"
+>BP M2 "D K L1;R;G"
+>BP M3 "D K L1;R;G"
+>BP M4 "D K L1;R;G"
+>BP M5 "D K L1;R;G"
+>BP M6 "D K L1;R;G"
+>G
+3E14:0000                         -   00                             .
+AX=3E14  BX=0000  CX=0000  DX=0000  SP=0200  BP=0000  SI=0000  DI=0000  
+DS=3E14  ES=3DE4  SS=3DF4  CS=3E15  IP=0005  NV UP EI PL NZ NA PO NC 
+M1:
+3E15:0005 C606090002     MOV       Byte Ptr [K (0009)],02    ;BR0  DS:0009=00
+3E14:0000                         -   02                             .
+AX=3E01  BX=0000  CX=0008  DX=0000  SP=0200  BP=0000  SI=0000  DI=0000  
+DS=3E14  ES=3DE4  SS=3DF4  CS=3E15  IP=0013  NV UP EI PL NZ NA PO NC 
+M2:
+3E15:0013 84840000       TEST      AL,Byte Ptr [SI+X]        ;BR1  DS:0000=00
+3E14:0000                         -   01                             .
+AX=3E01  BX=0000  CX=0008  DX=0000  SP=0200  BP=0000  SI=0000  DI=0000  
+DS=3E14  ES=3DE4  SS=3DF4  CS=3E15  IP=001F  NV UP EI PL NZ NA PO NC 
+M3:
+3E15:001F 46             INC       SI                        ;BR2
+3E14:0000                         -   01                             .
+AX=3E01  BX=0000  CX=0007  DX=0000  SP=0200  BP=0000  SI=0001  DI=0000  
+DS=3E14  ES=3DE4  SS=3DF4  CS=3E15  IP=0013  NV UP EI PL NZ NA PO NC 
+M2:
+3E15:0013 84840000       TEST      AL,Byte Ptr [SI+X]        ;BR1  DS:0001=01
+3E14:0000                         -   01                             .
+AX=3E01  BX=0000  CX=0007  DX=0000  SP=0200  BP=0000  SI=0001  DI=0000  
+DS=3E14  ES=3DE4  SS=3DF4  CS=3E15  IP=001F  NV UP EI PL NZ NA PO NC 
+M3:
+3E15:001F 46             INC       SI                        ;BR2
+3E14:0000                         -   01                             .
+AX=3E01  BX=0000  CX=0006  DX=0000  SP=0200  BP=0000  SI=0002  DI=0000  
+DS=3E14  ES=3DE4  SS=3DF4  CS=3E15  IP=0013  NV UP EI PL NZ NA PO NC 
+M2:
+3E15:0013 84840000       TEST      AL,Byte Ptr [SI+X]        ;BR1  DS:0002=02
+3E14:0000                         -   00                             .
+AX=3E01  BX=0000  CX=0006  DX=0000  SP=0200  BP=0000  SI=0002  DI=0000  
+DS=3E14  ES=3DE4  SS=3DF4  CS=3E15  IP=0022  NV UP EI PL ZR NA PE NC 
+M4:
+3E15:0022 83C630         ADD       SI,+30                    ;BR3
+3E14:0000                         -   00                             .
+AX=0201  BX=0000  CX=0006  DX=0032  SP=0200  BP=0000  SI=0032  DI=0000  
+DS=3E14  ES=3DE4  SS=3DF4  CS=3E15  IP=0029  NV UP EI PL NZ NA PO NC 
+M5:
+3E15:0029 CD21           INT       21                        ;BR4
+3E14:0000                         -   00                             .
+AX=0232  BX=0000  CX=0006  DX=0032  SP=0200  BP=0000  SI=0032  DI=0000  
+DS=3E14  ES=3DE4  SS=3DF4  CS=3E15  IP=002B  NV UP EI PL NZ NA PO NC 
+M6:
+3E15:002B B44C           MOV       AH,4C                     ;BR5
+Program terminated normally (0)
+>QUIT

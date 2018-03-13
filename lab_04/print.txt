@@ -1,0 +1,6 @@
+wb ds:2 l6
+wb ds:2+6 l6
+wb ds:2+6+6 l6
+wb ds:2+6+6+6 l6
+wb ds:2+6+6+6+6 l6
+wb ds:2+6+6+6+6+6 l6

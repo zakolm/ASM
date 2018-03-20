@@ -1,0 +1,22 @@
+; ФАЙЛ lr05-2-2.asm
+SD1 SEGMENT PARA COMMON 'DATA'
+    C1 LABEL BYTE
+    ORG 1h
+    C2 LABEL BYTE
+SD1 ENDS
+
+CSEG SEGMENT PARA PUBLIC 'CODE'
+    ASSUME CS: CSEG, DS: SD1
+    MAIN:
+        MOV AX,SD1
+        MOV DS,AX
+        MOV AH,2
+        MOV DL,C1
+        INT 21h
+        MOV DL,C2
+        INT 21h
+    EXIT:
+        MOV AX,4c00h
+        INT 21h
+CSEG ENDS
+END MAIN

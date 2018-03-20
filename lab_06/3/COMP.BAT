@@ -1,0 +1,2 @@
+MASM /Zi MOD1.ASM,,;
+LINK /CO MOD1.OBJ,,;

@@ -1,0 +1,2 @@
+MASM MAIN.ASM,,,;
+LINK MAIN.OBJ,,,;

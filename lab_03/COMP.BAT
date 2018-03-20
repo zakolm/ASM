@@ -1,0 +1,2 @@
+MASM /Zi MAIN.ASM,,;
+LINK /CO MAIN.OBJ,,;

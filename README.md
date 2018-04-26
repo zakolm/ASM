@@ -10,7 +10,7 @@
 | :four: | :white_check_mark: | :white_check_mark: | :white_check_mark: | |
 | :five: | :white_check_mark: | :white_check_mark: |:white_check_mark: | |
 | :six: | :white_check_mark: | :white_check_mark: | :white_check_mark: | |
-| :seven: | :white_check_mark: | :white_check_mark: | :x: | |
+| :seven: | :white_check_mark: | :white_check_mark: | :white_check_mark: | |
 | :eight: | :white_check_mark: | :white_check_mark: | :x: | |
 | :nine: | :white_check_mark: | :white_check_mark: | :x: | |
 | :ten: | :white_check_mark: | :x:| :x: | |

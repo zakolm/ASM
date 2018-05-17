@@ -1,0 +1,36 @@
+﻿Построение начато 25.04.2018 13:29:28.
+     1>Проект "c:\Users\Maksim\documents\visual studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj" в узле 2 (целевые объекты Build).
+     1>_MASM:
+         Assembling count.asm...
+         cmd.exe /C "C:\Users\Maksim\AppData\Local\Temp\tmp02c0b4fa15124b6dbe55b03a82defaab.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\count.obj" /W3 /errorReport:prompt  /Tacount.asm
+       _MASM:
+         Assembling PP.ASM...
+         cmd.exe /C "C:\Users\Maksim\AppData\Local\Temp\tmp602b0368501d43dbb2d5174e1f0a217c.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\PP.obj" /W3 /errorReport:prompt  /TaPP.ASM
+       _MASM:
+         Assembling setcler.asm...
+         cmd.exe /C "C:\Users\Maksim\AppData\Local\Temp\tmpdfe4d006cfd54de7b85894ee9d42bbde.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\setcler.obj" /W3 /errorReport:prompt  /Tasetcler.asm
+       _MASM:
+         Assembling x_u_y.asm...
+         cmd.exe /C "C:\Users\Maksim\AppData\Local\Temp\tmp4d187e966d3f44f18e6a52ac9548e3cb.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\x_u_y.obj" /W3 /errorReport:prompt  /Tax_u_y.asm
+       _MASM:
+         Assembling x_y.asm...
+         cmd.exe /C "C:\Users\Maksim\AppData\Local\Temp\tmp0ab815c8a72748aaa7c1ca53c112726e.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\x_y.obj" /W3 /errorReport:prompt  /Tax_y.asm
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\maksim\documents\visual studio 2012\Projects\ConsoleApplication1\Debug\ConsoleApplication1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\maksim\documents\visual studio 2012\Projects\ConsoleApplication1\Debug\ConsoleApplication1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\maksim\documents\visual studio 2012\Projects\ConsoleApplication1\Debug\ConsoleApplication1.lib" /MACHINE:X86 Debug\ConsoleApplication1.obj
+         Debug\stdafx.obj
+         Debug\count.obj
+         Debug\PP.obj
+         Debug\setcler.obj
+         Debug\x_u_y.obj
+         Debug\x_y.obj
+         ConsoleApplication1.vcxproj -> c:\users\maksim\documents\visual studio 2012\Projects\ConsoleApplication1\Debug\ConsoleApplication1.exe
+     1>Построение проекта "c:\Users\Maksim\documents\visual studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj" завершено (целевые объекты Build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:01.02

@@ -1,0 +1,68 @@
+PUSHR MACRO RG
+	IRP REG, <RG> ; for reg in rg
+		IFIDN <REG>, <F> ; if reg == F
+			PUSHF
+		ELSE
+			PUSH REG
+		ENDIF
+	ENDM
+ENDM   
+
+POPR MACRO RG
+	IRP REG, <RG>
+		IFIDN <REG>, <F>
+			POPF
+		ELSE
+			POP REG
+		ENDIF
+	ENDM
+ENDM 
+
+COUNT MACRO A:REQ,L:REQ,R:REQ
+LOCAL COUNT_FOR ; имя COUNT_FOR будет существовать только внутри макроса
+	MOV ESI,0                   ;индекс
+	MOV R,0                     ;куда класть число единиц
+
+	MOV ECX,L
+	COUNT_FOR:
+		BT [A], ESI             ;получает значение ESI-бита из строки EBX во флаг CF
+		ADC R, 0                ;EAX + 0 + CF
+		INC ESI                 ;ESI++
+		LOOP COUNT_FOR          ;переход к метке COUNT_FOR, пока CX > 0
+ENDM
+
+KONSTRUKTOR MACRO A:REQ, L:REQ, POS:REQ
+	IRP P, <POS> ; for p in pos
+		MOV ESI, P
+		BTS [A], ESI                ;установка бита в 1 (BT + Set bit)
+	ENDM
+ENDM
+
+SetCler MACRO A:REQ,N:REQ,P:=<1>
+	MOV ESI, N
+	IFIDN <P>, <0>
+		BTR [A], ESI                ;установка бита в 0 (BT + Reset bit)
+	ELSE
+		BTS [A], ESI                ;установка бита в 1 (BT + Set bit)
+	ENDIF
+ENDM
+
+AuB MACRO A:REQ,B:REQ,N:REQ
+LOCAL M1
+	MOV ECX,N                       ;CX = L
+	DEC ECX
+	SHR ECX,5                       ;сдвигаем на 5 разрядов вправо (делим нацело на 32)
+	;если ECX больше или равен 32, то он станет 1, иначе 0
+	INC ECX                         ;Инкрементируем ECX, чтобы учесть неполный DWORD
+	                                ;LEA EDI, A                      ;загрузка в EDI адреса аргумента A
+	                                ;LEA ESI, B
+	MOV ESI,0
+	MOV EDI,0
+
+	M1:
+		MOV EAX,[A][ESI]
+		OR [B][EDI],EAX                    ;объединяем
+		ADD EDI,4                       ;сдвигаем указатели строк на 4
+		ADD ESI,4
+		LOOP M1  
+ENDM

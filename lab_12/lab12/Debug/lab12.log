@@ -1,0 +1,18 @@
+﻿Построение начато 28.05.2018 8:50:44.
+     1>Проект "C:\Users\Maksim\Desktop\lab12\lab12\lab12.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt lab12.cpp stdafx.cpp
+         stdafx.cpp
+         lab12.cpp
+         Создание кода...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Maksim\Desktop\lab12\Debug\lab12.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Maksim\Desktop\lab12\Debug\lab12.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Maksim\Desktop\lab12\Debug\lab12.lib" /MACHINE:X86 Debug\lab12.obj
+         Debug\stdafx.obj
+         Debug\MacroLib.obj
+         LINK : не найден или не выполнена сборка C:\Users\Maksim\Desktop\lab12\Debug\lab12.exe при последней инкрементной компоновке; выполняется полная компоновка
+         lab12.vcxproj -> C:\Users\Maksim\Desktop\lab12\Debug\lab12.exe
+     1>Построение проекта "C:\Users\Maksim\Desktop\lab12\lab12\lab12.vcxproj" завершено (целевые объекты Build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:02.46

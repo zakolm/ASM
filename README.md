@@ -13,5 +13,5 @@
 | :eight: | :white_check_mark: | :white_check_mark: | :white_check_mark: | |
 | :nine: | :white_check_mark: | :white_check_mark: | :white_check_mark: | |
 | :ten: | :white_check_mark: | :white_check_mark:| :white_check_mark: | |
-| :one: :one: | :white_check_mark: | :x: | :x: | |
-| :one: :two: | :white_check_mark: | :x: | :x: | |
+| :one: :one: | :white_check_mark: | :x: | :white_check_mark: | |
+| :one: :two: | :white_check_mark: | :x: | :white_check_mark: | |

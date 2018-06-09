@@ -15,9 +15,9 @@
 | :seven: | :white_check_mark: | :white_check_mark: | :white_check_mark: | |
 | :eight: | :white_check_mark: | :white_check_mark: | :white_check_mark: | |
 | :nine: | :white_check_mark: | :white_check_mark: | :white_check_mark: | |
-| :ten: | :white_check_mark: | :white_check_mark:| :white_check_mark: | |
-| :one: :one: | :white_check_mark: | :white_check_mark: | :white_check_mark: | |
-| :one: :two: | :white_check_mark: | :white_check_mark: | :white_check_mark: | |
+| :one::zero: | :white_check_mark: | :white_check_mark:| :white_check_mark: | |
+| :one::one: | :white_check_mark: | :white_check_mark: | :white_check_mark: | |
+| :one::two: | :white_check_mark: | :white_check_mark: | :white_check_mark: | |
 
 <h2>Вопросы к экзамену:</h2>
 

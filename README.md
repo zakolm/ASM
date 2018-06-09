@@ -1,7 +1,6 @@
 # Ассемблер 4 семестр BMSTU(Bauman Moscow), IU7, 2018
-<H2>Перенесу все лабы с gitlab, если будет время и желание:)</H2>
 
-| Number | Issued | Status | On GitLab | Exercise |
+| Number | Issued | Status | On GitHub | Exercise |
 |---------|---|------|----------|---|
 | :one: | :white_check_mark: | :white_check_mark: | :white_check_mark: | <h3>Изучение отладчика AFD.</h3><h4>1.HАБРАТЬ ПРОГРАММУ</h4><h6>Примечание: Программа выводит на дисплей сообщение и ожидает  нажатия клавиши, код символа помещается в регистр AL</h6><h4>2.ТРАНСЛИРОВАТЬ ПРОГРАММУ</h4><h4>3.СОЗДАТЬ ИСПОЛНЯЕМЫЙ ФАЙЛ</h4><h4>4.ВЫПОЛНИТЬ ПРОГРАММУ ПОД УПРАВЛЕНИЕМ ОТЛАДЧИКА AFD</h4>|
 | :two: | :white_check_mark: | :white_check_mark: | :white_check_mark: | <h3>ЗАДАНИЕ 1</h3><h4>отладка в CV (CodeView)</h4><h5>шаг 1- Подготовить приведенную ниже программу к отладке:</h5><h6>а) скопировать текст программы в файл KR_1.ASM;</h6><h6>б) выполнить трансляцию: MASM /Zi KR_1.ASM,,;</h6><h6>в) выполнить компоновку: LINK /CO KR_1.OBJ;</h6>|
@@ -13,5 +12,5 @@
 | :eight: | :white_check_mark: | :white_check_mark: | :white_check_mark: | |
 | :nine: | :white_check_mark: | :white_check_mark: | :white_check_mark: | |
 | :ten: | :white_check_mark: | :white_check_mark:| :white_check_mark: | |
-| :one: :one: | :white_check_mark: | :x: | :white_check_mark: | |
-| :one: :two: | :white_check_mark: | :x: | :white_check_mark: | |
+| :one: :one: | :white_check_mark: | :white_check_mark: | :white_check_mark: | |
+| :one: :two: | :white_check_mark: | :white_check_mark: | :white_check_mark: | |
